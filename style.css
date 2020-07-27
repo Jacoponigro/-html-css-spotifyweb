@@ -1,0 +1,58 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+.container{
+  height: 100vh;
+}
+main{
+  height: calc(100% - 100px);
+  display: flex;
+}
+aside{
+  display:flex;
+  flex-direction: column;
+  height: 100%;
+  width: 300px;
+  background-color: red;
+}
+footer{
+  height: 100px;
+  background-color: yellow;
+}
+.main-content{
+  height: 100%;
+  overflow-y: auto;
+  width: calc(100% - 300px);
+  background-color:green;
+}
+.upgrade{
+  position: fixed;
+  top:0;
+  right:0;
+  z-index:1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height:100px;
+  width: calc(100% - 300px);
+  background-color: rgba(0,0,0,0.6);
+}
+.secondary-nav{
+  background-color: orange;
+  height: 100%;
+  overflow:hidden;
+}
+.aside-bottom{
+  margin-top: auto;
+  height:80px;
+  flex-shrink: 0;
+}
+.playlist-title{
+  height: 50px;
+}
+.playlist-list{
+  overflow-y: auto;
+  height: calc(100% - 50px);
+}
