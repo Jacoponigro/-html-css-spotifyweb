@@ -10,6 +10,7 @@ main{
   height: calc(100% - 100px);
   display: flex;
 }
+/* aside */
 aside{
   display:flex;
   flex-direction: column;
@@ -19,13 +20,23 @@ aside{
   color:lightgrey;
   padding-left: 15px;
 }
-footer{
-  height: 100px;
-  background-color: #282828;
+.logo{
   position: relative;
-  z-index: 1;
+  margin: 8px 4px 8px 8px;
+  height:70px;
 }
-/* aside */
+.logo img{
+  position:absolute;
+  top:0;
+  left:0;
+  max-height: 30px;
+  display: inline-block;
+}
+.logo h3{
+  margin-left: 35px;
+  margin-top: 5px;
+  color:#fff;
+}
 .secondary-nav{
   height: 100%;
   overflow:hidden;
@@ -44,11 +55,6 @@ footer{
 .playlist-list a{
   text-decoration: none;
   color:lightgrey;
-}
-.fa-spotify{
-  color: #fff;
-  max-width:80px;
-  margin: 8px 4px 8px 4px;
 }
 .main-nav{
   margin-bottom: 20px;
@@ -81,4 +87,22 @@ footer{
   overflow-y: auto;
   width: calc(100% - 300px);
   background-color:green;
+}
+/* footer */
+footer{
+  height: 100px;
+  background-color: #282828;
+  position: relative;
+  z-index: 1;
+}
+.footer-row{
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+.footer-col{
+  height: 50px;
+  width: 50px;
+  background-color: red;
 }
