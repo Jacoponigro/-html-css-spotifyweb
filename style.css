@@ -90,6 +90,7 @@ aside{
   width: calc(100% - 300px);
   background-color:green;
 }
+/* top navigation */
 .container-list{
   text-align: center;
 }
@@ -102,6 +103,20 @@ aside{
   margin:10px;
   color: lightgrey;
 }
+/*  fine top navigation */
+/* tracks */
+.container-tracks{
+  display: flex;
+  justify-content: space-around;
+}
+.items-tracks img{
+  max-height: 185px;
+}
+.items-topnav:hover{
+  background-color: red;
+}
+/* fine tracks */
+
 /* fine maincontent */
 /* footer */
 footer{
