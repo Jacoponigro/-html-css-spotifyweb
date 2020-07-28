@@ -33,14 +33,11 @@ footer{
   height:80px;
   flex-shrink: 0;
 }
-.playlist-title{
-  height: 50px;
-  margin-bottom: 0px;
-}
 .playlist-list{
   overflow-y: auto;
   height: calc(100% - 50px);
   list-style: none;
+  line-height: 25px;
 }
 .playlist-list a{
   text-decoration: none;
@@ -56,6 +53,13 @@ footer{
 }
 .navigation-list{
   list-style: none;
+}
+.aside-bottom a{
+  color: lightgrey;
+  text-decoration: none;
+}
+.aside-bottom h4{
+  color:#fff;
 }
 /* fine aside */
 .upgrade{
