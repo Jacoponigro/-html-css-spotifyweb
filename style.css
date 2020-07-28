@@ -22,6 +22,8 @@ aside{
 footer{
   height: 100px;
   background-color: #282828;
+  position: relative;
+  z-index: 1;
 }
 /* aside */
 .secondary-nav{
