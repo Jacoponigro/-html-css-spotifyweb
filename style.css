@@ -28,7 +28,7 @@ aside{
   display:flex;
   flex-direction: column;
   height: 100%;
-  width: 300px;
+  width:200px;
   background-color: black;
   color:lightgrey;
   padding-left: 15px;
@@ -72,6 +72,10 @@ aside{
   text-decoration: none;
   color:lightgrey;
 }
+.fa-plus-square{
+  margin-right: 10px;
+  margin-top: 10px;
+}
 .main-nav{
   margin-bottom: 20px;
 }
@@ -83,9 +87,28 @@ aside{
 .aside-bottom a{
   color: lightgrey;
   text-decoration: none;
+  margin-left: 30px;
+  margin-bottom: 20px;
 }
 .aside-bottom h4{
   color:#fff;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.aside-bottom{
+  margin-right: 20px;
+  position: relative;
+}
+.aside-bottom img{
+  position:absolute;
+  top:0;
+  left:0;
+  max-height: 30px;
+  display: inline-block;
+  margin-top: 25px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background-color: grey;
 }
 .navigation-list img{
   position:absolute;
@@ -131,13 +154,13 @@ aside{
   justify-content: flex-end;
   align-items: center;
   height:80px;
-  width: calc(100% - 300px);
+  width: calc(100% - 200px);
   background-color: rgba(0,0,0,0.6);
 }
 .main-content{
   height: 100%;
   overflow-y: auto;
-  width: calc(100% - 300px);
+  width: calc(100% - 200px);
   background-color:green;
 }
 .main-title{
@@ -210,15 +233,153 @@ footer{
   position: relative;
   z-index: 1;
 }
-.footer-row{
+.player-container{
   display: flex;
   justify-content: space-between;
-  height: 100%;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  height: 100px;
+  padding: 0 10px;
+}
+.player{
+  display: flex;
   align-items: center;
 }
-.footer-col{
+.player img{
   height: 50px;
-  width: 50px;
-  background-color: red;
+  margin-right: 20px;
 }
+.player-commands {
+  display: flex;
+}
+.player-commands a:hover {
+  color: #fff;
+}
+.player-coomands a:not(:last-child) {
+  margin-right: 10px;
+}
+.player-commands a {
+  color: #7D7F84;
+  font-size: 18px;
+  padding:10px;
+}
+.player-controls {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  max-width: 40%;
+}
+.player-song{
+  font-size: 14px;
+}
+.player-singer {
+  color: #7D7F84;
+  font-size: 12px;
+  font-weight: 700;
+}
+.player-controls-top a.button-play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 30px;
+}
+.player-controls-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  height: 40px;
+}
+.player-controls-top a {
+  color: #fff;
+  font-size: 16px;
+}
+.player-controls-bottom {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.player-controls-top a:not(:last-child) {
+  margin-right: 20px;
+}
+.player-controls-top a.button-pre {
+  margin-right: 0;
+}
+
+.player-time {
+  position: relative;
+  height: 4px;
+  width: 100%;
+  margin: 0 10px;
+  background-color: #5A5A5A;
+  border-radius: 5px;
+}
+.player-time-current,
+.player-time-end {
+  font-size: 10px;
+  font-weight: 700;
+}
+.player-settings {
+  display: flex;
+  max-width: 250px;
+}
+.player-settings a {
+  color: #fff;
+  font-size: 14px;
+}
+.player-settings a:not(:last-child) {
+  margin-right: 15px;
+}
+.player-volume {
+  display: flex;
+  align-items: center;;
+}
+.player-volume .barra-volume {
+  position: relative;
+  height: 4px;
+  min-width: 110px;
+  background-color: #5A5A5A;
+}
+.player-title {
+  margin-right: 40px;
+}
+/* footer media query */
+@media screen and (max-width:992px) {
+  .player-title {
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .player-commands {
+    flex-direction: column;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .player-volume .barra-volume {
+    min-width: 80px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .player-volume .barra-volume {
+    min-width: 45px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .player-settings {
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .player-settings a:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+/* fine footer media query */
 /* fine footer */
