@@ -90,6 +90,12 @@ aside{
   width: calc(100% - 300px);
   background-color:green;
 }
+.main-title{
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
 /* top navigation */
 .container-list{
   text-align: center;
@@ -97,23 +103,51 @@ aside{
 .top-navigation{
   margin-top:80px;
   list-style: none;
-  display: inline-flex;
+  display:flex;
+  justify-content: center;
 }
 .top-navigation li{
   margin:10px;
   color: lightgrey;
+
 }
 /*  fine top navigation */
 /* tracks */
 .container-tracks{
   display: flex;
+}
+.first{
   justify-content: space-around;
 }
 .items-tracks img{
   max-height: 185px;
 }
-.items-topnav:hover{
-  background-color: red;
+.subtitle-tracks{
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.items-tracks h3{
+  text-align: center;
+}
+.sub-sub{
+  color:lightgrey;
+  font-size: 10px;
+}
+.items-tracks p{
+  text-align: center;
+}
+.second{
+  margin-left: 7px;
+  margin-right: 8px;
+}
+.sovratitolo{
+  color: #fff;
+  margin-bottom: 8px;
+}
+.radius{
+  border:1px solid green;
+  border-radius: 50%;
 }
 /* fine tracks */
 
