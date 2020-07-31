@@ -73,6 +73,9 @@ aside{
   text-decoration: none;
   color:lightgrey;
 }
+.playlist-list li{
+  font-weight: 700;
+}
 .fa-plus-square{
   margin-right: 10px;
   margin-top: 10px;
@@ -84,6 +87,9 @@ aside{
   list-style: none;
   line-height: 25px;
   margin-left: 30px;
+}
+.navigation-list{
+  font-weight: 700;
 }
 .aside-bottom a{
   color: lightgrey;
@@ -197,6 +203,16 @@ aside{
   margin-bottom: 15px;
   margin-left: 10px;
 }
+.items-topnav{
+  font-weight: 700;
+}
+/* mediaquery main content */
+@media screen and (max-width:992px){
+  .items-tracks{
+    width: calc(100% / 4);
+  }
+}
+/* fine mediaquery main content */
 /* top navigation */
 .container-list{
   text-align: center;
@@ -251,6 +267,7 @@ aside{
   border:1px solid green;
   border-radius: 50%;
 }
+
 /* fine tracks */
 
 /* fine maincontent */
